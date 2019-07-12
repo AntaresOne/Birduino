@@ -21,6 +21,7 @@ Very simple, all you need is:
 This minigame has been developed for 0.96" 128x64 OLED display. Although all the resolution variables and constants have been exposed to be modified on the fly, it is untested on different resolution displays.
 
 In case you want to try it on a different OLED display, here's the data to be modified:
+- I2C_ADDR if 0x3C is not suitable for your display
 - SSD1306_LCDHEIGHT from Adafruit_SSD1306.h
 - PLAYER_SIZE_X // Player bitmap's X size
 - PLAYER_SIZE_Y // Player bitmap's Y size
