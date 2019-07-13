@@ -6,7 +6,7 @@
 - <a href="#debugging">Debugging</a>
 
 ## [What it is](#what-it-is)
-Yet another Flappy Bird clone, this time playable on an Arduino with a momentary button and an OLED display.
+Yet another Flappy Bird inspired minigame, this time playable on an Arduino with a momentary button and an OLED display.
 
 ## [Wiring](#wiring)
 Very simple, all you need is:
