@@ -10,7 +10,7 @@ Yet another Flappy Bird clone, this time playable on an Arduino with a momentary
 
 ## [Wiring](#wiring)
 Very simple, all you need is:
-- SSD1306 OLED display
+- **SSD1306** OLED display
 - momentary button
 - 4.7kΩ resistor
 - obviously, an Arduino :)
@@ -21,15 +21,15 @@ Very simple, all you need is:
 This minigame has been developed for 0.96" 128x64 OLED display. Although all the resolution variables and constants have been exposed to be modified on the fly, it is untested on different resolution displays.
 
 In case you want to try it on a different OLED display, here's the data to be modified:
-- I2C_ADDR if 0x3C is not suitable for your display
-- SSD1306_LCDHEIGHT from Adafruit_SSD1306.h
-- PLAYER_SIZE_X // Player bitmap's X size
-- PLAYER_SIZE_Y // Player bitmap's Y size
-- PIPE_SIZE_X // Pipe obstacle type bitmap's X size
-- PIPE_SIZE_Y // Pipe obstacle type bitmap's Y size
-- axisOffset // Axis offset to define a safe screen area
-- playerPositionY // Initial player position on Y axis (display.height() / 2)
-- obstacleInitialPositionX // Initial obstacle position on X axis (display.width() - axisOffset)
+- **I2C_ADDR** if **0x3C** is not suitable for your display
+- **SSD1306_LCDHEIGHT** from **Adafruit_SSD1306.h**
+- **PLAYER_SIZE_X** // Player bitmap's X size
+- **PLAYER_SIZE_Y** // Player bitmap's Y size
+- **PIPE_SIZE_X** // Pipe obstacle type bitmap's X size
+- **PIPE_SIZE_Y** // Pipe obstacle type bitmap's Y size
+- **axisOffset** // Axis offset to define a safe screen area
+- **playerPositionY** // Initial player position on Y axis (display.height() / 2)
+- **obstacleInitialPositionX** // Initial obstacle position on X axis (display.width() - axisOffset)
 
 ## [Debugging](#debugging)
-Debugging via the serial port is turned off by default. To enable it, just uncomment "#define DEBUGGABLE" symbol.
+Debugging via the serial port is turned off by default. To enable it, just uncomment "**#define DEBUGGABLE**" symbol.
