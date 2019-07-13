@@ -1,4 +1,4 @@
-# FlappyBirdy for Arduino
+# Birduino for Arduino
 # Index
 - <a href="#what-it-is">What it is</a>
 - <a href="#wiring">Wiring</a>

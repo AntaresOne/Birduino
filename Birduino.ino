@@ -1,5 +1,5 @@
 /**
-  FlappyBirdy minigame.
+  Birduino minigame.
   Yet another Flappy Bird clone, this time on an Arduino with a button and 0.96" OLED display!
 
   @author Mattia "AntaresOne" D'Alleva <antaresone@antaresone.eu>
