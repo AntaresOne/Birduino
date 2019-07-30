@@ -1,6 +1,6 @@
 /**
-  Birduino minigame.
-  Yet another Flappy Bird clone, this time on an Arduino with a button and 0.96" OLED display!
+  Birduino
+  Yet another Flappy Bird inspired minigame, this time playable on Arduino!
 
   @author Mattia "AntaresOne" D'Alleva <antaresone@antaresone.eu>
   @version 0.99 7/12/19
@@ -8,6 +8,7 @@
   Wiring diagram.
   
                     Arduino Nano
+  (same for Arduino Uno and other 32U4/328P-based boards)
                      (Example)
                    | TX    Vin |--- Power supply (or use embedded USB port)
                    | RX    GND |--- GND (OLED), Pushbutton NC 4.7kΩ Pullup resistor
@@ -37,7 +38,7 @@
 #define OLED_RESET 4
 
 #if (SSD1306_LCDHEIGHT != 64)
-  #error("Height incorrect, please fix Adafruit_SSD1306.h!");
+  #error("Height incorrect, please fix Adafruit_SSD1306.h.");
 #endif
 
 #define PLAYER_SIZE_X 17  // Player bitmap's X size
@@ -148,7 +149,7 @@ void checkCollisions() {
   Serial.println("PlayerY: ");
   Serial.print(playerPositionY);
   Serial.println();
-  Serial.println("OstacoloX: ");
+  Serial.println("ObstacleX: ");
   Serial.print(obstaclePositionX);
 #endif
 
@@ -259,7 +260,7 @@ void printMainMenu() {
     display.println("AntaresOne");
     display.setTextSize(1);
     display.setCursor(0, 18);
-    display.println("FlappyBirdy");
+    display.println("Birduino");
     display.setCursor(32, 38);
     display.println("Press start");
     display.setCursor(42, 48);
